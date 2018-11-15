@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{059F7A1F-01CC-4F0E-B3BE-C999B6207DCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\DAO.cs" />
+    <Compile Include="Forms\frm_removeFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_removeFunc.Designer.cs">
+      <DependentUpon>frm_removeFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_menu.Designer.cs">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_cliente.Designer.cs">
+      <DependentUpon>frm_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Pessoa.cs" />
+    <Compile Include="Forms\frm_start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_start.Designer.cs">
+      <DependentUpon>frm_start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_funcLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_funcLogin.Designer.cs">
+      <DependentUpon>frm_funcLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Forms\frm_admLogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_admLogado.Designer.cs">
+      <DependentUpon>frm_admLogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_AddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_AddFood.Designer.cs">
+      <DependentUpon>frm_AddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Prato.cs" />
+    <Compile Include="Forms\frm_AddFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_AddFuncionario.Designer.cs">
+      <DependentUpon>frm_AddFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_garLogado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_garLogado.Designer.cs">
+      <DependentUpon>frm_garLogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_removeFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_removeFood.Designer.cs">
+      <DependentUpon>frm_removeFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frm_admLogado.resx">
+      <DependentUpon>frm_admLogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_removeFunc.resx">
+      <DependentUpon>frm_removeFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_menu.resx">
+      <DependentUpon>frm_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_cliente.resx">
+      <DependentUpon>frm_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_funcLogin.resx">
+      <DependentUpon>frm_funcLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_AddFood.resx">
+      <DependentUpon>frm_AddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_AddFuncionario.resx">
+      <DependentUpon>frm_AddFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_garLogado.resx">
+      <DependentUpon>frm_garLogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_removeFood.resx">
+      <DependentUpon>frm_removeFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\frm_start.resx">
+      <DependentUpon>frm_start.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
